@@ -2,6 +2,10 @@
 
 A simulator for airplane boarding. It supports different boarding methods and airplane layouts.
 
+Inspired by: 
+
+[![Vox - The better way to board an airplane](https://img.youtube.com/vi/cMgarcFkXz4/0.jpg)](https://www.youtube.com/watch?v=cMgarcFkXz4)
+
 ## Usage
 usage: ./boardSim \[numRuns\] \[numRows\] \[layout\] \[printPlane\]
 

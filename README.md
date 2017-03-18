@@ -23,6 +23,8 @@ printPlane - 1 if you want the plane to be printed, 0 otherwise
 
 '|' an aisle
 
+'?' a person who has not yet decided what to do next
+
 'S' a sitting person
 
 'B' a person who is putting her/his bags away

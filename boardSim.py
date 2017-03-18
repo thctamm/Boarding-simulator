@@ -277,7 +277,7 @@ def run(rows, layout, method, printPlane):
                         print('_', end='')
                 print('')
             print('\nCurrent round: {}'.format(rounds))
-            time.sleep(0.02)
+            time.sleep(0.04)
         
         rounds += 1
 def main():
@@ -285,7 +285,7 @@ def main():
         print('usage: ./boardSim [numRuns] [numRows] [layout] [printPlane]')
         print('numRuns - Number of runs to take the average of')
         print('numRows - Number of rows in the airplane')
-        print('layout - one of "747", "747", "a380"')
+        print('layout - one of "737", "747", "a380"')
         print('printPlane - 1 if you want the plane to be printed, 0 otherwise')
         return
     runs = int(sys.argv[1])
@@ -305,9 +305,9 @@ def main():
     frontAvg = 0
     
     for _ in range(runs): 
-        randomAvg += run(48, plane, ('random', ''), printPlane)
-        backAvg += run(48, plane, ('byRows', 'back', 15), printPlane)
-        frontAvg += run(48, plane, ('byRows', 'front', 15), printPlane)
+        randomAvg += run(rows, plane, ('random', ''), printPlane)
+        backAvg += run(rows, plane, ('byRows', 'back', 15), printPlane)
+        frontAvg += run(rows, plane, ('byRows', 'front', 15), printPlane)
 
     randomAvg = randomAvg/float(runs)
     frontAvg = frontAvg/float(runs)
